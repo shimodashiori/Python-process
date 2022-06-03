@@ -1,0 +1,8 @@
+fileobj = open("list.txt", "r")
+while True:
+  line = fileobj.readline()
+  if line:
+    print( "select count(*) from information_schema.tables where table_name='", line[:-1],"';")
+  else:
+    break
+    
