@@ -1,0 +1,11 @@
+row_no = 0
+
+fileobj = open("list.txt", "r")
+while True:
+  line = fileobj.readline()
+  if line:
+    row_no += 1
+    print( row_no,"select count(*) from information_schema.tables where table_na
+me=", line,";")
+  else:
+    break
